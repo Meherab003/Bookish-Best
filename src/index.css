@@ -10,3 +10,11 @@
 .secondary-font{
     font-family: "Work Sans", sans-serif;
 }
+
+.links a.active{
+    border: 1px solid #23BE0A;
+    color: #23BE0A; 
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-weight: 700;
+}

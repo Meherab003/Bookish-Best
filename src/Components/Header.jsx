@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     const links = <>
         <li>
-            <NavLink className="lg:btn lg:bg-transparent lg:border lg:border-[#23BE0A] lg:text-[#23BE0A] lg:text-lg" to='/'>Home</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1' to='/'>Home</NavLink>
         </li>
         <li>
-            <NavLink className="lg:btn lg:bg-transparent lg:border lg:border-[#23BE0A] lg:text-[#23BE0A] lg:text-lg" to='/listedbooks'>Listed Books</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1' to='/listedbooks'>Listed Books</NavLink>
         </li>
         <li>
-            <NavLink className="lg:btn lg:bg-transparent lg:border lg:border-[#23BE0A] lg:text-[#23BE0A] lg:text-lg" to='/pagetoread'>Pages To Read</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1' to='/pagetoread'>Pages To Read</NavLink>
         </li>
     </>
   return (
@@ -42,7 +42,7 @@ const Header = () => {
         <a className="text-lg lg:text-4xl font-bold">Bookish Best</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="gap-2 menu-horizontal px-1">
+        <ul className="gap-2 menu-horizontal px-1 links">
           {links}
         </ul>
       </div>

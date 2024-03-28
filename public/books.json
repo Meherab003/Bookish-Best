@@ -1,10 +1,10 @@
 [
     {
-        "bookId": 1,
+        "id": 1,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://ih1.redbubble.net/image.1048273202.0304/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg",
-        "review": "A classic tale of the Jazz Age, portraying the American Dream through the enigmatic Jay Gatsby.",
+        "review": "The Great Gatsby is a timeless masterpiece that delves into the complexities of the American Dream amidst the glitz and glamour of the Jazz Age. F. Scott Fitzgerald's exquisite prose paints a vivid portrait of Jay Gatsby, a mysterious and enigmatic figure, and his relentless pursuit of the unattainable Daisy Buchanan. Through themes of love, wealth, and societal decadence, Fitzgerald captures the essence of an era while exploring the fragility of human aspirations. A compelling narrative filled with tragedy, romance, and intrigue, The Great Gatsby continues to resonate with readers, offering profound insights into the human condition.",
         "totalPages": 180,
         "rating": 4.5,
         "category": "Fiction",
@@ -13,11 +13,11 @@
         "yearOfPublishing": 1925
     },
     {
-        "bookId": 2,
+        "id": 2,
         "bookName": "1984",
         "author": "George Orwell",
-        "image": "https://ih1.redbubble.net/image.3627581073.5430/fposter,small,wall_texture,square_product,600x600.jpg",
-        "review": "A dystopian novel that explores themes of totalitarianism, surveillance, and the erosion of truth.",
+        "image": "https://ih1.redbubble.net/image.3627578336.5377/gbrf,5x7,f,540x540-pad,450x450,f8f8f8.jpg",
+        "review": "George Orwell's 1984 is a chilling dystopian novel that serves as a stark warning against totalitarianism and the erosion of individual freedoms. Set in a future society ruled by the omnipresent Party led by Big Brother, the novel follows the protagonist Winston Smith as he rebels against the oppressive regime. Through pervasive surveillance, propaganda, and thought control, Orwell paints a bleak picture of a world devoid of truth and freedom. Themes of surveillance, censorship, and the nature of reality are masterfully explored, making 1984 a hauntingly relevant and thought-provoking read even in the modern age.",
         "totalPages": 328,
         "rating": 4.8,
         "category": "Science Fiction",
@@ -26,11 +26,11 @@
         "yearOfPublishing": 1949
     },
     {
-        "bookId": 3,
+        "id": 3,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "image": "https://ih1.redbubble.net/image.1143124233.8247/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
-        "review": "An impactful narrative on racial injustice and moral growth in the American South.",
+        "review": "Harper Lee's To Kill a Mockingbird is a timeless classic that tackles themes of racial injustice, moral growth, and empathy in the American South. Set against the backdrop of the Great Depression, the novel follows the young protagonist Scout Finch as she navigates the complexities of race and morality in her hometown of Maycomb, Alabama. Through the trial of Tom Robinson, a black man falsely accused of raping a white woman, Lee exposes the deep-seated prejudices and injustices prevalent in society. With its poignant narrative and unforgettable characters, To Kill a Mockingbird remains a powerful indictment against bigotry and a testament to the enduring power of empathy and compassion.",
         "totalPages": 324,
         "rating": 4.7,
         "category": "Fiction",
@@ -39,11 +39,11 @@
         "yearOfPublishing": 1960
     },
     {
-        "bookId": 4,
+        "id": 4,
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://ih1.redbubble.net/image.892107754.9256/st,small,507x507-pad,600x600,f8f8f8.jpg",
-        "review": "A coming-of-age novel that captures the disillusionment of youth and the search for authenticity.",
+        "review": "J.D. Salinger's The Catcher in the Rye is a seminal coming-of-age novel that resonates with readers of all generations. Narrated by the disillusioned teenager Holden Caulfield, the novel offers a raw and unfiltered exploration of adolescence, alienation, and the search for identity. As Holden embarks on a journey through the streets of New York City, grappling with loss, innocence, and the hypocrisy of adulthood, Salinger captures the essence of youth with unparalleled authenticity. With its candid portrayal of teenage angst and existential despair, The Catcher in the Rye remains a timeless classic that continues to captivate readers worldwide.",
         "totalPages": 224,
         "rating": 4.3,
         "category": "Fiction",
@@ -52,11 +52,11 @@
         "yearOfPublishing": 1951
     },
     {
-        "bookId": 5,
+        "id": 5,
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://ih1.redbubble.net/image.1235174828.9632/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg",
-        "review": "A timeless romance novel that satirizes societal expectations and explores the complexities of love and class.",
+        "review": "Jane Austen's Pride and Prejudice is a timeless romance that transcends the constraints of its era, captivating readers with its wit, charm, and social commentary. Set in the early 19th century, the novel follows the headstrong Elizabeth Bennet as she navigates the intricacies of love, marriage, and societal expectations in Regency England. Through the spirited interactions between Elizabeth and the enigmatic Mr. Darcy, Austen masterfully explores themes of class, prejudice, and the pursuit of happiness. With its memorable characters and sparkling dialogue, Pride and Prejudice remains a beloved classic that continues to enchant readers with its enduring appeal.",
         "totalPages": 432,
         "rating": 4.6,
         "category": "Romance",
@@ -65,11 +65,11 @@
         "yearOfPublishing": 1813
     },
     {
-        "bookId": 6,
+        "id": 6,
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://ih1.redbubble.net/image.3438570991.1441/sn,x600-pad,600x600,f8f8f8.jpg",
-        "review": "An enchanting adventure through Middle-earth, following the journey of Bilbo Baggins.",
+        "review": "J.R.R. Tolkien's The Hobbit is an enchanting adventure that transports readers to the magical world of Middle-earth, where dragons soar and heroes rise. The story follows the unassuming hobbit Bilbo Baggins as he embarks on an epic quest to reclaim the lost kingdom of Erebor from the fearsome dragon Smaug. Joined by a band of dwarves and the wizard Gandalf, Bilbo traverses perilous lands and encounters mythical creatures on his journey of self-discovery and courage. With its richly imagined world and timeless themes of bravery, friendship, and heroism, The Hobbit continues to captivate audiences of all ages, leaving an indelible mark on the landscape of fantasy literature.",
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
