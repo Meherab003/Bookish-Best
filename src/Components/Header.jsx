@@ -13,7 +13,7 @@ const Header = () => {
         </li>
     </>
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 lg:mt-3">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="p-1 lg:hidden">
@@ -47,8 +47,10 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end lg:gap-2">
-        <a className="btn bg-[#23BE0A] lg:px-8 lg:text-lg text-white">Sign In</a>
-        <a className="btn bg-[#59C6D2] lg:px-8 lg:text-lg text-white">Sign Up</a>
+        <a className="btn bg-[#23BE0A] lg:px-8 lg:text-lg text-white hidden lg:flex">Sign In</a>
+        <a className="btn bg-[#59C6D2] lg:px-8 lg:text-lg text-white hidden lg:flex">Sign Up</a>
+        <a className="btn btn-sm bg-[#23BE0A] lg:px-8 lg:text-lg text-white lg:hidden">Sign In</a>
+        <a className="btn btn-sm bg-[#59C6D2] lg:px-8 lg:text-lg text-white lg:hidden">Sign Up</a>
       </div>
     </div>
   );
