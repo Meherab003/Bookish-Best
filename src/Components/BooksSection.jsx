@@ -1,4 +1,5 @@
 import BooksCard from "./BooksCard";
+import PropTypes from 'prop-types';
 
 const BooksSection = ({ books }) => {
   console.log(books);
@@ -16,4 +17,7 @@ const BooksSection = ({ books }) => {
   );
 };
 
+BooksSection.propTypes = {
+    books: PropTypes.array
+}
 export default BooksSection;

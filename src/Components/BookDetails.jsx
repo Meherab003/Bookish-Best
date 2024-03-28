@@ -1,6 +1,16 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveWishlistBooks } from "../Utility/localStorage";
 
 const BookDetails = () => {
+    const handleReadBooks = () =>{
+        toast.success("Book added in 'Read Books' page")
+    }
+    const handleWishlist = () => {
+        saveWishlistBooks(idInt);
+        toast.success("Book added in 'Wishlist Books' page")
+    }
   const books = useLoaderData();
   const { id } = useParams();
   const idInt = JSON.parse(id);
@@ -68,14 +78,15 @@ const BookDetails = () => {
           </tbody>
         </table>
         <div className="flex gap-5 mt-3">
-          <Link className="btn btn-ghost border border-[#1313134D] font-bold w-20">
+          <Link onClick={()=> handleReadBooks(idInt)} className="btn btn-ghost border border-[#1313134D] font-bold w-20">
             Read
           </Link>
-          <Link className="btn bg-[#50B1C9] font-bold text-white w-20">
+          <Link onClick={() => handleWishlist(idInt)} className="btn bg-[#50B1C9] font-bold text-white w-20">
             Wishlist
           </Link>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

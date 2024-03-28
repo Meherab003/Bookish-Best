@@ -1,5 +1,7 @@
 import { FaRegStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 const BooksCard = ({ book }) => {
   const { id, bookName, author, image, rating, tags, category } = book;
   return (
@@ -31,5 +33,8 @@ const BooksCard = ({ book }) => {
     </Link>
   );
 };
+BooksCard.propTypes = {
+    book: PropTypes.object,
+}
 
 export default BooksCard;
