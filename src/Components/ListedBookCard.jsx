@@ -18,11 +18,11 @@ const ListedBookCard = ({ book }) => {
     category,
   } = book;
   return (
-    <div className="flex flex-col lg:flex-row border rounded-3xl">
+    <div className="flex flex-col lg:flex-row border rounded-3xl secondary-font">
       <div className="p-3">
         <img className="lg:w-56 bg-[#1313130D] rounded-3xl" src={image} alt="" />
       </div>
-      <div className="flex flex-col gap-1 lg:gap-5 p-1 lg:p-3 flex-1">
+      <div className="flex flex-col gap-1 lg:gap-5 p-3 flex-1">
         <h3 className="text-2xl font-bold primary-font">{bookName}</h3>
         <p className="text-[#131313CC]">By: {author}</p>
         <div className="flex flex-col lg:flex-row gap-1 lg:gap-5">
@@ -36,7 +36,7 @@ const ListedBookCard = ({ book }) => {
           </div>
           <div className="flex items-center gap-2 text-[#13131399]">
           <SlCalender />
-            <p>Year of Publishing {yearOfPublishing}</p>
+            <p>Year of Publishing: {yearOfPublishing}</p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-1 lg:gap-5 text-[#13131399] border-b pb-2">
@@ -46,7 +46,7 @@ const ListedBookCard = ({ book }) => {
           </div>
           <div className="flex items-center gap-2 text-[#13131399]">
             <FaRegFileAlt />
-            <p>Page {totalPages}</p>
+            <p>Page: {totalPages}</p>
           </div>
         </div>
         <div className="flex gap-1 lg:gap-3">
