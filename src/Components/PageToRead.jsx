@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getStoredReadBooks } from "../Utility/localStorage";
 import { useLoaderData } from "react-router-dom";
-import React from "react";
 import {
   BarChart,
   Bar,

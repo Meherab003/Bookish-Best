@@ -11,6 +11,12 @@ const Header = () => {
         <li>
             <NavLink className='px-3 py-2 lg:mx-1' to='/pagetoread'>Pages To Read</NavLink>
         </li>
+        <li>
+            <NavLink className='px-3 py-2 lg:mx-1' to='/about'>About</NavLink>
+        </li>
+        <li>
+            <NavLink className='px-3 py-2 lg:mx-1' to='/contacts'>Contacts</NavLink>
+        </li>
     </>
   return (
     <div className="navbar bg-base-100 lg:mt-3">
