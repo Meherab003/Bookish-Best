@@ -1,7 +1,7 @@
 const Contacts = () => {
   return (
     <div className="bg-green-100 bg-cover">
-      <div className="flex flex-col gap-8 items-center justify-center py-12">
+      <div className="flex flex-col gap-4 items-center justify-center py-12">
         <div className="flex flex-col gap-4 px-4">
             <h2 className=" text-4xl lg:text-5xl font-bold">Contacts</h2>
             <div className="flex flex-col gap-2">

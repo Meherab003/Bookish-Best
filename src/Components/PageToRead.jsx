@@ -41,7 +41,7 @@ const PageToRead = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen bg-[#13131308]">
         <BarChart
           width={500}
           height={300}

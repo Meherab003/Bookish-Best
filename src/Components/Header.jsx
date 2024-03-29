@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     const links = <>
         <li>
-            <NavLink className='px-3 py-2 lg:mx-1' to='/'>Home</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1 font-semibold text-[#131313CC]' to='/'>Home</NavLink>
         </li>
         <li>
-            <NavLink className='px-3 py-2 lg:mx-1' to='/listedbooks'>Listed Books</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1 font-semibold text-[#131313CC]' to='/listedbooks'>Listed Books</NavLink>
         </li>
         <li>
-            <NavLink className='px-3 py-2 lg:mx-1' to='/pagetoread'>Pages To Read</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1 font-semibold text-[#131313CC]' to='/pagetoread'>Pages To Read</NavLink>
         </li>
         <li>
-            <NavLink className='px-3 py-2 lg:mx-1' to='/about'>About</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1 font-semibold text-[#131313CC]' to='/about'>About</NavLink>
         </li>
         <li>
-            <NavLink className='px-3 py-2 lg:mx-1' to='/contacts'>Contacts</NavLink>
+            <NavLink className='px-3 py-2 lg:mx-1 font-semibold text-[#131313CC]' to='/contacts'>Contacts</NavLink>
         </li>
     </>
   return (

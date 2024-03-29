@@ -24,7 +24,7 @@ const ListedBookCard = ({ book }) => {
       </div>
       <div className="flex flex-col gap-1 lg:gap-5 p-3 flex-1">
         <h3 className="text-2xl font-bold primary-font">{bookName}</h3>
-        <p className="text-[#131313CC]">By: {author}</p>
+        <p className="text-[#131313CC] font-semibold">By: {author}</p>
         <div className="flex flex-col lg:flex-row gap-1 lg:gap-5">
           <div className="flex gap-3 lg:gap-5 items-center">
             <p className="font-bold">Tag</p>
@@ -34,17 +34,17 @@ const ListedBookCard = ({ book }) => {
             ))}
             </div>
           </div>
-          <div className="flex items-center gap-2 text-[#13131399]">
+          <div className="flex items-center gap-2 text-[#13131399] font-semibold">
           <SlCalender />
             <p>Year of Publishing: {yearOfPublishing}</p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-1 lg:gap-5 text-[#13131399] border-b pb-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 font-semibold">
             <MdOutlinePeopleAlt />
             <p>Publisher: {publisher}</p>
           </div>
-          <div className="flex items-center gap-2 text-[#13131399]">
+          <div className="flex items-center gap-2 text-[#13131399] font-semibold">
             <FaRegFileAlt />
             <p>Page: {totalPages}</p>
           </div>
@@ -57,7 +57,7 @@ const ListedBookCard = ({ book }) => {
             Rating: {rating}
           </p>
           <Link
-            className="btn btn-sm rounded-3xl bg-[#23BE0A] text-white"
+            className="btn btn-sm rounded-3xl bg-[#23BE0A] text-white "
             to={`/books/${id}`}
           >
             View Details
