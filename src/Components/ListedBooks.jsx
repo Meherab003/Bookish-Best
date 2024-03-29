@@ -18,11 +18,7 @@ const ListedBooks = () => {
   const [displayReadBooks, setDisplayReadBooks] = useState([]);
 
   const handleBookSortBy = filter => {
-    if(filter === 'all'){
-      setDisplayReadBooks(displayReadBooks);
-      setDisplayWishlistBooks(displayWishlistBooks);
-    }
-    else if(filter === 'page'){
+    if(filter === 'page'){
       const pageSortedWish = [...displayWishlistBooks].sort((a,b) => a.totalPages < b.totalPages ? 1 : -1)
       const pageSortedRead = [...displayReadBooks].sort((a,b) => a.totalPages < b.totalPages ? 1 : -1)
       setDisplayWishlistBooks(pageSortedWish)
@@ -58,9 +54,11 @@ const ListedBooks = () => {
   }, [books]);
   return (
     <div>
-      <h2 className="font-bold text-3xl text-center lg:my-5">Books</h2>
+      <div className="text-center my-5 bg-[#1313130D] p-3 lg:p-5 rounded-xl">
+      <h2 className="font-bold text-3xl text-[#131313]">Books</h2>
+      </div>
       {/* /dropdown */}
-      <div className="flex items-center justify-center"> 
+      <div className="flex items-center justify-center my-3"> 
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn m-1 bg-[#23BE0A] text-white font-semibold px-5">
             Sort By <span><FaChevronDown /></span>
@@ -69,17 +67,14 @@ const ListedBooks = () => {
             tabIndex={0}
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li onClick={() => handleBookSortBy('all')}>
-              <a>All</a>
-            </li>
             <li onClick={() => handleBookSortBy('rating')}>
-              <a>Rating</a>
+              <a>Sort By Rating</a>
             </li>
             <li onClick={() => handleBookSortBy('page')}>
-              <a>Number of Pages</a>
+              <a>Sort By Pages</a>
             </li>
             <li onClick={() => handleBookSortBy('year')}>
-              <a>Publish Year</a>
+              <a>Sort By Year</a>
             </li>
           </ul>
         </div>

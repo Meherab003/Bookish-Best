@@ -50,7 +50,7 @@ const ListedBookCard = ({ book }) => {
           </div>
         </div>
         <div className="flex gap-1 lg:gap-3">
-          <p className="bg-[#328EFF26] text-sm lg:text-[16px] text-[#328EFF] w-24 lg:w-36 text-center rounded-3xl p-1">
+          <p className="bg-[#328EFF26] text-sm lg:text-[16px] text-[#328EFF] text-center rounded-3xl px-5 py-2">
             <span className="hidden lg:inline">Category:</span> {category}
           </p>
           <p className="bg-[#FFAC3326] text-sm lg:text-[16px] text-[#FFAC33] w-20 lg:w-28 text-center rounded-3xl p-1">
