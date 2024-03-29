@@ -1,27 +1,14 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { saveReadBooks, saveWishlistBooks } from "../Utility/localStorage";
 
 const BookDetails = () => {
-  const readBooksArray = JSON.parse(localStorage.getItem("readList"));
-  const wishlistBooksArray = JSON.parse(localStorage.getItem("wishlist"));
   const handleReadBooks = () => {
-    if (readBooksArray.includes(idInt)) {
-      console.log("hello");
-      toast.error("Already added in 'Read Books' page");
-    } else {
-      saveReadBooks(idInt);
-      toast.success("Book added in 'Read Books' page");
-    }
+    saveReadBooks(idInt) 
   };
   const handleWishlist = () => {
-    if (wishlistBooksArray.includes(idInt)) {
-      toast.error("Already added in 'Wishlist Books' page");
-    } else {
-      saveWishlistBooks(idInt);
-      toast.success("Book added in 'Wishlist Books' page");
-    }
+    saveWishlistBooks(idInt)
   };
   const books = useLoaderData();
   const { id } = useParams();
