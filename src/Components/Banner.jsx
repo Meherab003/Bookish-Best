@@ -7,7 +7,7 @@ const Banner = () => {
         <h2 className="text-3xl lg:text-6xl font-bold primary-font text-black flex flex-col lg:gap-4">
           <span>Books to freshen up</span> your bookshelf
         </h2>
-        <Link to='/listedbooks/wishlist' className="btn bg-[#23BE0A] lg:px-8 lg:text-xl font-semibold text-white w-36 lg:w-48">View The List</Link>
+        <Link to='/listedbooks' className="btn bg-[#23BE0A] lg:px-8 lg:text-xl font-semibold text-white w-36 lg:w-48">View The List</Link>
       </div>
       <img className="w-36 lg:w-64"
         src="https://i.ibb.co/Tk6gK2j/banner-cover-book.png"

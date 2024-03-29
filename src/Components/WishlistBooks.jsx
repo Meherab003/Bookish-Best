@@ -1,4 +1,5 @@
 import ListedBookCard from "./ListedBookCard";
+import PropTypes from 'prop-types';
 
 const WishlistBooks = ({displayWishlistBooks}) => {
     // console.log(displayWishlistBooks)
@@ -10,5 +11,9 @@ const WishlistBooks = ({displayWishlistBooks}) => {
         </div>
     );
 };
+
+WishlistBooks.propTypes = {
+    displayWishlistBooks: PropTypes.array,
+}
 
 export default WishlistBooks;

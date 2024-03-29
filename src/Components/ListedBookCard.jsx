@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { FaRegFileAlt } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
+import PropTypes from 'prop-types';
 
 const ListedBookCard = ({ book }) => {
   const {
@@ -9,7 +10,6 @@ const ListedBookCard = ({ book }) => {
     image,
     bookName,
     author,
-    review,
     tags,
     totalPages,
     publisher,
@@ -22,13 +22,13 @@ const ListedBookCard = ({ book }) => {
       <div className="p-3">
         <img className="lg:w-56 bg-[#1313130D] rounded-3xl" src={image} alt="" />
       </div>
-      <div className="flex flex-col gap-5 p-3 flex-1">
+      <div className="flex flex-col gap-1 lg:gap-5 p-1 lg:p-3 flex-1">
         <h3 className="text-2xl font-bold primary-font">{bookName}</h3>
         <p className="text-[#131313CC]">By: {author}</p>
-        <div className="flex gap-5">
-          <div className="flex gap-5">
+        <div className="flex flex-col lg:flex-row gap-1 lg:gap-5">
+          <div className="flex gap-3 lg:gap-5 items-center">
             <p className="font-bold">Tag</p>
-            <div className="flex gap-5">
+            <div className="flex gap-2 lg:gap-5 text-sm lg:text-[16px]">
             {tags.map((tag, idx) => (
               <p className="text-[#23BE0A] font-bold" key={idx}>#{tag}</p>
             ))}
@@ -39,7 +39,7 @@ const ListedBookCard = ({ book }) => {
             <p>Year of Publishing {yearOfPublishing}</p>
           </div>
         </div>
-        <div className="flex gap-5 text-[#13131399] border-b pb-2">
+        <div className="flex flex-col lg:flex-row gap-1 lg:gap-5 text-[#13131399] border-b pb-2">
           <div className="flex items-center gap-2">
             <MdOutlinePeopleAlt />
             <p>Publisher: {publisher}</p>
@@ -49,11 +49,11 @@ const ListedBookCard = ({ book }) => {
             <p>Page {totalPages}</p>
           </div>
         </div>
-        <div className="flex gap-3">
-          <p className="bg-[#328EFF26] text-[#328EFF] w-36 text-center rounded-3xl p-1">
-            Category: {category}
+        <div className="flex gap-1 lg:gap-3">
+          <p className="bg-[#328EFF26] text-sm lg:text-[16px] text-[#328EFF] w-24 lg:w-36 text-center rounded-3xl p-1">
+            <span className="hidden lg:inline">Category:</span> {category}
           </p>
-          <p className="bg-[#FFAC3326] text-[#FFAC33] w-28 text-center rounded-3xl p-1">
+          <p className="bg-[#FFAC3326] text-sm lg:text-[16px] text-[#FFAC33] w-20 lg:w-28 text-center rounded-3xl p-1">
             Rating: {rating}
           </p>
           <Link
@@ -67,5 +67,9 @@ const ListedBookCard = ({ book }) => {
     </div>
   );
 };
+
+ListedBookCard.propTypes = {
+  book: PropTypes.object,
+}
 
 export default ListedBookCard;
