@@ -9,6 +9,7 @@ import {
   getStoredWishlistBooks,
 } from "../Utility/localStorage";
 import ReadBooks from "./ReadBooks";
+import { Helmet } from "react-helmet-async";
 
 const ListedBooks = () => {
   const books = useLoaderData();
@@ -54,6 +55,9 @@ const ListedBooks = () => {
   }, [books]);
   return (
     <div>
+      <Helmet>
+        <title>BookishBest | Listed Books</title>
+      </Helmet>
       <div className="text-center my-5 bg-[#1313130D] p-3 lg:p-5 rounded-xl">
       <h2 className="font-bold text-3xl text-[#131313]">Books</h2>
       </div>

@@ -10,6 +10,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
+import { Helmet } from "react-helmet-async";
 
 const PageToRead = () => {
   const [readListBooks, setReadListBooks] = useState([]);
@@ -41,7 +42,11 @@ const PageToRead = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
   return (
-    <div className="flex justify-center items-center h-screen bg-[#13131308]">
+    <div>
+      <Helmet> 
+        <title>BookishBest | Page To Read</title>
+      </Helmet>
+      <div className="flex justify-center items-center h-screen bg-[#13131308]">
         <BarChart
           width={500}
           height={300}
@@ -68,6 +73,7 @@ const PageToRead = () => {
             ))}
           </Bar>
         </BarChart>
+      </div>
     </div>
   );
 };
